@@ -1,0 +1,31 @@
+.logo {
+  display: inline-flex;
+
+  &__icon {
+    &_color {
+      &_black {
+        fill: var(--ui-color-only-black);
+      }
+
+      &_primary {
+        fill: var(--ui-color-primary);
+      }
+
+      &_secondary {
+        fill: var(--ui-color-secondary);
+      }
+
+      &_success {
+        fill: var(--ui-color-success);
+      }
+
+      &_warning {
+        fill: var(--ui-color-warning);
+      }
+
+      &_danger {
+        fill: var(--ui-color-danger);
+      }
+    }
+  }
+}

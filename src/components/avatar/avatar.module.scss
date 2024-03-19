@@ -1,0 +1,100 @@
+.avatar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: var(--ui-size-48);
+  height: var(--ui-size-48);
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--ui-size-50-persent);
+
+    &_radius {
+      &_s {
+        border-radius: var(--ui-size-8);
+      }
+
+      &_m {
+        border-radius: var(--ui-size-12);
+      }
+
+      &_l {
+        border-radius: var(--ui-size-50-persent);
+      }
+    }
+  }
+
+  &_border {
+    padding: var(--ui-size-2);
+    border: var(--ui-size-2) solid;
+  }
+
+  &_radius {
+    &_s {
+      border-radius: var(--ui-size-12);
+    }
+
+    &_m {
+      border-radius: var(--ui-size-16);
+    }
+
+    &_l {
+      border-radius: var(--ui-size-50-persent);
+    }
+  }
+
+  &_size {
+    &_s {
+      width: var(--ui-size-40);
+      height: var(--ui-size-40);
+    }
+
+    &_m {
+      width: var(--ui-size-48);
+      height: var(--ui-size-48);
+    }
+
+    &_l {
+      width: var(--ui-size-56);
+      height: var(--ui-size-56);
+    }
+  }
+
+  &_color {
+    &_primary {
+      border-color: var(--ui-color-primary);
+    }
+
+    &_secondary {
+      border-color: var(--ui-color-secondary);
+    }
+
+    &_success {
+      border-color: var(--ui-color-success);
+    }
+
+    &_warning {
+      border-color: var(--ui-color-warning);
+    }
+
+    &_danger {
+      border-color: var(--ui-color-danger);
+    }
+  }
+
+  &_status {
+    display: inline-flex;
+    position: absolute;
+    width: var(--ui-size-12);
+    height: var(--ui-size-12);
+    background-color: var(--ui-color-success);
+    border-radius: var(--ui-size-50-persent);
+    z-index: 2;
+    border: var(--ui-size-2) solid var(--ui-background);
+    bottom: -3px;
+    left: -3px;
+  }
+}

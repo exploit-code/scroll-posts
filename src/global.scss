@@ -1,0 +1,60 @@
+:root {
+  --ui-background: #fff;
+  --ui-color-accent-1: #12181d;
+  --ui-color-success: #1ac964;
+  --ui-color-warning: #f4a423;
+  --ui-color-danger: #f32961;
+  --ui-color-primary: #0070ef;
+  --ui-color-secondary: #9355d3;
+  --ui-color-default: #f4f4f5;
+
+  --ui-color-icons: #78787f;
+  --ui-color-icons-focus: #83828b;
+  --ui-color-only-white: #fff;
+  --ui-color-only-black: #000;
+
+  --ui-transition: 0.3s ease;
+  --ui-saturate: saturate(200%);
+  --ui-active-scale: scale(0.96);
+
+  --ui-size-2: 2px;
+  --ui-size-4: 4px;
+  --ui-size-8: 8px;
+  --ui-size-12: 12px;
+  --ui-size-16: 16px;
+  --ui-size-24: 24px;
+  --ui-size-32: 32px;
+  --ui-size-40: 40px;
+  --ui-size-48: 48px;
+  --ui-size-56: 56px;
+  --ui-size-64: 64px;
+  --ui-size-50-persent: 50%;
+  --ui-size-100-persent: 100%;
+
+  --ui-font-size-small: 14px;
+  --ui-font-size-medium: 16px;
+  --ui-font-size-large: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--ui-background);
+}
+
+#root {
+  width: calc(100% - 32px);
+  max-width: 1168px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}

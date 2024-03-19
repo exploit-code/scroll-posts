@@ -1,0 +1,85 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ui-color-primary);
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  appearance: none;
+  user-select: none;
+  transition: var(--ui-transition);
+  transition-property: filter;
+  will-change: auto;
+
+  &_color {
+    &_default {
+      background-color: var(--ui-color-default);
+      color: var(--ui-color-accent-1);
+    }
+
+    &_primary {
+      background-color: var(--ui-color-primary);
+      color: var(--ui-color-only-white);
+    }
+
+    &_secondary {
+      background-color: var(--ui-color-secondary);
+      color: var(--ui-color-only-white);
+    }
+
+    &_success {
+      background-color: var(--ui-color-success);
+      color: var(--ui-color-only-black);
+    }
+
+    &_warning {
+      background-color: var(--ui-color-warning);
+      color: var(--ui-color-only-black);
+    }
+
+    &_danger {
+      background-color: var(--ui-color-danger);
+      color: var(--ui-color-only-white);
+    }
+  }
+
+  &_radius {
+    &_s {
+      border-radius: var(--ui-size-8);
+    }
+
+    &_m {
+      border-radius: var(--ui-size-16);
+    }
+
+    &_l {
+      border-radius: var(--ui-size-24);
+    }
+  }
+
+  &_size {
+    &_s {
+      height: var(--ui-size-32);
+      padding: 0 var(--ui-size-12);
+      font-size: var(--ui-font-size-small);
+    }
+
+    &_m {
+      height: var(--ui-size-40);
+      padding: 0 var(--ui-size-16);
+      font-size: var(--ui-font-size-medium);
+    }
+
+    &_l {
+      height: var(--ui-size-48);
+      padding: 0 var(--ui-size-24);
+      font-size: var(--ui-font-size-large);
+    }
+  }
+
+  &:hover,
+  &:active {
+    filter: var(--ui-saturate);
+  }
+}

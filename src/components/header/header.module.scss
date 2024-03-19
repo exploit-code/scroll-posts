@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--ui-size-24) 0;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: var(--ui-size-8);
+  }
+}

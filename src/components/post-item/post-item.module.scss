@@ -1,0 +1,18 @@
+.postItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-size-8);
+  padding: var(--ui-size-16);
+  background-color: var(--ui-color-default);
+  border-radius: var(--ui-size-8);
+  text-decoration: none;
+  color: var(--ui-color-accent-1);
+
+  &__title {
+    font-size: var(--ui-font-size-large);
+  }
+
+  &__desc {
+    font-size: var(--ui-font-size-medium);
+  }
+}

@@ -1,0 +1,106 @@
+.chiplink {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--ui-size-8);
+  text-decoration: none;
+  color: var(--ui-color-accent-1);
+  border-radius: var(--ui-size-16);
+  word-wrap: none;
+  user-select: none;
+  transition: var(--ui-transition);
+  transition-property: transform, filter;
+  will-change: auto;
+  appearance: none;
+
+  &__dot {
+    width: var(--ui-size-8);
+    height: var(--ui-size-8);
+    border-radius: var(--ui-size-50-persent);
+
+    &_color {
+      &_default {
+        background-color: var(--ui-color-default);
+      }
+
+      &_primary {
+        background-color: var(--ui-color-primary);
+      }
+
+      &_secondary {
+        background-color: var(--ui-color-secondary);
+      }
+
+      &_success {
+        background-color: var(--ui-color-success);
+      }
+
+      &_warning {
+        background-color: var(--ui-color-warning);
+      }
+
+      &_danger {
+        background-color: var(--ui-color-danger);
+      }
+    }
+  }
+
+  &_color {
+    &_default {
+      background-color: var(--ui-color-default);
+      color: var(--ui-color-accent-1);
+    }
+
+    &_primary {
+      background-color: var(--ui-color-primary);
+      color: var(--ui-color-only-white);
+    }
+
+    &_secondary {
+      background-color: var(--ui-color-secondary);
+      color: var(--ui-color-only-white);
+    }
+
+    &_success {
+      background-color: var(--ui-color-success);
+      color: var(--ui-color-only-black);
+    }
+
+    &_warning {
+      background-color: var(--ui-color-warning);
+      color: var(--ui-color-only-black);
+    }
+
+    &_danger {
+      background-color: var(--ui-color-danger);
+      color: var(--ui-color-only-white);
+    }
+  }
+
+  &_size {
+    &_s {
+      padding: var(--ui-size-2) var(--ui-size-8);
+      font-size: var(--ui-font-size-small);
+    }
+
+    &_m {
+      padding: var(--ui-size-4) var(--ui-size-12);
+      font-size: var(--ui-font-size-medium);
+    }
+
+    &_l {
+      padding: var(--ui-size-4) var(--ui-size-16);
+      font-size: var(--ui-font-size-large);
+    }
+  }
+
+  &:hover,
+  &:active {
+    filter: var(--ui-saturate);
+
+  }
+
+  &:active {
+    transform: var(--ui-active-scale);
+  }
+}

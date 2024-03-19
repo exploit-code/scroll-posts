@@ -39,5 +39,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "classnames": "^2.5.1",
+    "react-router-dom": "^6.22.3",
+    "sass": "^1.72.0",
+    "uuid": "^9.0.1"
   }
 }
